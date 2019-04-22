@@ -3,4 +3,4 @@ function changeColor () {
 }
 alert("hi!");
 //yeap!!!
-//hello!
+// great)
