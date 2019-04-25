@@ -41,12 +41,21 @@ let workingWithTag ={
 };
 
 
+function initAll(){
+    workingWithTag.selectAndReplace("text");
+    workingWithTag.newElement();
+    workingWithTag.changeColor("text");
+    workingWithTag.changeSize("text");
+    workingWithTag.addCode("text");
+    console.log(workingWithTag.numberOfFunctions);
+    console.log(workingWithTag.anoterObject.name, workingWithTag.anoterObject.surname, workingWithTag.anoterObject.age );
+    workingWithTag.anoterObject.loggingInConsole();
+}
 
-workingWithTag.selectAndReplace("text");
-workingWithTag.newElement();
-workingWithTag.changeColor("text");
-workingWithTag.changeSize("text");
-workingWithTag.addCode("text");
+initAll();
+
+workingWithTag.numberOfFunctions = 3;
+workingWithTag.firstAtribute = "award";
 console.log(workingWithTag.numberOfFunctions);
-console.log(workingWithTag.anoterObject.name, workingWithTag.anoterObject.surname, workingWithTag.anoterObject.age );
-workingWithTag.anoterObject.loggingInConsole();
+console.log(workingWithTag.firstAtribute);
+
