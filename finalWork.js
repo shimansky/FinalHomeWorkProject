@@ -7,7 +7,7 @@ let workingWithTag ={
     },
 
     newElement: function () {
-        var div = document.createElement('div');
+        let div = document.createElement('div');
         div.innerHTML = "<strong>lets play</strong>ROCK N ROLL!";
         text.appendChild(div);
     },
@@ -25,6 +25,18 @@ let workingWithTag ={
     addCode: function (id) {
         a = document.getElementById(id);
         a.onclick = function() { alert('blah'); };
+    },
+
+    numberOfFunctions: 5,
+    innerText: "lorem ipsum...",
+    randomNumbers: [1,3,5,4,9,7,0],
+    anoterObject:{
+        name:"Sherlok",
+        surname:"Holmes",
+        age:"35",
+        loggingInConsole: function () {
+            console.log(workingWithTag.anoterObject.name, workingWithTag.anoterObject.surname, workingWithTag.anoterObject.age )
+        }
     }
 };
 
@@ -35,3 +47,6 @@ workingWithTag.newElement();
 workingWithTag.changeColor("text");
 workingWithTag.changeSize("text");
 workingWithTag.addCode("text");
+console.log(workingWithTag.numberOfFunctions);
+console.log(workingWithTag.anoterObject.name, workingWithTag.anoterObject.surname, workingWithTag.anoterObject.age );
+workingWithTag.anoterObject.loggingInConsole();
